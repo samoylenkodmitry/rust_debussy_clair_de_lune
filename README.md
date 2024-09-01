@@ -2,7 +2,7 @@
 
 ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/rust-debussy-synthesizer)
+![GitHub last commit](https://img.shields.io/github/last-commit/samoylenkodmitry/rust-debussy-synthesizer)
 
 ## Preview
 
