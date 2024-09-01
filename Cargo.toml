@@ -1,0 +1,15 @@
+[package]
+name = "cursor-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+midir = "0.10.0"
+nodi = "1.0.1"
+rodio = "0.19.0"
+midly = "0.5.3"
+rand = "0.8.5"
+
+[[bin]]
+name = "cursor-test"
+path = "main.rs"
