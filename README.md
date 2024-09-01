@@ -26,4 +26,4 @@ Note: This project requires a MIDI file named "DEB_CLAI.MID" in the project dire
 
 ## License
 
-[Specify your license here]
+[MIT]
