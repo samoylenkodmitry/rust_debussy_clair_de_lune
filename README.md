@@ -1,5 +1,9 @@
 # Rust Debussy Clair de Lune Synthesizer
 
+![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/rust-debussy-synthesizer)
+
 ## Preview
 
 [![Clair de Lune Preview](https://img.youtube.com/vi/l-EPGSopoZE/0.jpg)](https://www.youtube.com/watch?v=l-EPGSopoZE)
@@ -31,3 +35,7 @@ Note: This project requires a MIDI file named "DEB_CLAI.MID" in the project dire
 ## License
 
 [MIT](https://opensource.org/licenses/MIT)
+
+## Build Status
+
+![Build Status](https://img.shields.io/github/workflow/status/yourusername/rust-debussy-synthesizer/Rust)
