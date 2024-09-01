@@ -1,5 +1,9 @@
 # Rust Debussy Clair de Lune Synthesizer
 
+## Preview
+
+[![Clair de Lune Preview](https://img.youtube.com/vi/l-EPGSopoZE/0.jpg)](https://www.youtube.com/watch?v=l-EPGSopoZE)
+
 This project is a Rust-based synthesizer that plays Debussy's Clair de Lune. It uses MIDI input to generate piano-like sounds in real-time.
 
 ## Features
@@ -26,4 +30,4 @@ Note: This project requires a MIDI file named "DEB_CLAI.MID" in the project dire
 
 ## License
 
-[MIT]
+[MIT](https://opensource.org/licenses/MIT)
