@@ -2,7 +2,7 @@
 
 ![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/samoylenkodmitry/rust-debussy-synthesizer)
+![GitHub last commit](https://img.shields.io/github/last-commit/samoylenkodmitry/rust_debussy_clair_de_lune)
 
 ## Preview
 
@@ -38,4 +38,4 @@ Note: This project requires a MIDI file named "DEB_CLAI.MID" in the project dire
 
 ## Build Status
 
-![Build Status](https://img.shields.io/github/workflow/status/yourusername/rust-debussy-synthesizer/Rust)
+![Build Status](https://img.shields.io/github/workflow/status/samoylenkodmitry/rust_debussy_clair_de_lune/Rust)
