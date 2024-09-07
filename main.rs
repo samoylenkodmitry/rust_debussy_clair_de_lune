@@ -1,4 +1,5 @@
 use std::{error::Error, time::Duration, sync::{Arc, Mutex}, f32::consts::PI, collections::HashMap};
+use cpal::traits::{DeviceTrait, HostTrait};
 use nodi::{midly::{Smf, Format}, timers::Ticker, Player, Sheet, Connection, MidiEvent};
 use rodio::{OutputStream, Sink, Source};
 use rand::Rng;
@@ -209,7 +210,12 @@ fn main() -> Result<(), Box<dyn Error>> {
     println!("Parsed MIDI file: {} tracks", tracks.len());
     println!("Format: {:?}, timing: {:?}", header.format, header.timing);
 
-    let (_stream, stream_handle) = OutputStream::try_default()?;
+    let device = cpal::default_host().output_devices()?
+        .into_iter()
+        .find(|d| d.name().map(|n| n.contains("pipewire")).unwrap_or(false))
+        .unwrap_or_else(|| cpal::default_host().default_output_device().unwrap());
+    let (_stream, stream_handle) = OutputStream::try_from_device(&device)?;
+    std::mem::forget(_stream); // Prevent the stream from being closed immediately
     let sink = Sink::try_new(&stream_handle)?;
 
     let synth = Arc::new(Mutex::new(Synthesizer::new(44100)));
