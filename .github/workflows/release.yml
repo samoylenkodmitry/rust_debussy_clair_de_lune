@@ -8,7 +8,7 @@ on:
 jobs:
   release:
     name: Release for ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
+    runs-on: ${{ matrix.runner || matrix.os }}
     strategy:
       matrix:
         include:
@@ -19,8 +19,9 @@ jobs:
             artifact_name: clair-de-lune.exe
             asset_name: clair-de-lune-windows-amd64.exe
           - os: macos-latest
+            runner: [self-hosted, macOS, ARM64]
             artifact_name: clair-de-lune
-            asset_name: clair-de-lune-macos-amd64
+            asset_name: clair-de-lune-macos-arm64
 
     steps:
     - uses: actions/checkout@v2
